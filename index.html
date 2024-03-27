@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+</head>
+
+<body class="bg-primary">
+
+    <div style="box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);"
+        class="w-[80vmin] py-[50px] px-[40px] bg-black absolute top-[50%] left-[50%] rounded-[5px] translate-x-[-50%] translate-y-[-50%]">
+        <span class="block text-center text-[100px]">&#128514;</span>
+        <p class="text-[20px] text-center text-white font-normal leading-[35px] my-[30px]" id="joke">
+        </p>
+        <button
+            class="flex bg-primary text-balck-100 font-semibold py-[12px] px-[25px] my-0 mx-auto rounded-[5px] cursor-pointer b-none p-[5px] text-[18px]"
+            id="btn">Get Random</button>
+    </div>
+
+    <!-- js -->
+    <script src="./index.js"></script>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#fab22d",
+                        black: {
+                            DEFAULT: "#15161a",
+                            100: "#171721"
+                        }
+                    }
+                },
+            },
+        };
+    </script>
+
+</body>
+
+</html>
